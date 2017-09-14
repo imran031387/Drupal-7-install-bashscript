@@ -3,23 +3,23 @@
 # Directories
 ##########################################################
 httpDir="/Users/mimran/Projects/"
-rootDir="drupal-7-pgsql-demo" #leave blank to set http directory as root directory.
+rootDir="stretch-film-7" #leave blank to set http directory as root directory.
 ##########################################################
 
 # Site
 ##########################################################
-siteName="Drupal PGSQL Site"
-siteSlogan="Drupal PGSQL Demo "
+siteName="Stretch Film"
+siteSlogan=""
 siteLocale="gb"
 ##########################################################
 
 # Database
 # for my sql change the dbDriver to "mysql"
 ##########################################################
-dbDriver="pgsql"
-dbHost="127.0.0.1:5433"
-dbName="drupal_7_pgsql_db"
-dbUser="mimran"
+dbDriver="mysql"
+dbHost="127.0.0.1"
+dbName="stretch_film_7_db"
+dbUser="root"
 dbPassword="root"
 ##########################################################
 
@@ -32,7 +32,7 @@ adminEmail="admin@example.com"
 
 # Download Core
 ##########################################################
-drush dl drupal-7.44 -y --destination=$httpDir --drupal-project-rename=$rootDir;
+drush dl drupal-7.56 -y --destination=$httpDir --drupal-project-rename=$rootDir;
 
 cd $httpDir/$rootDir;
 
@@ -72,6 +72,8 @@ google_analytics \
 backup_migrate \
 jquery_update \
 webform \
+services \
+libraries \
 
 
 zen;
@@ -112,6 +114,8 @@ googleanalytics \
 admin_menu \
 admin_menu_toolbar \
 file_entity \
+services \
+libraries \
 zen;
 
 # Pre configure settings

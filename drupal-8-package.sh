@@ -3,13 +3,13 @@
 # Directories
 ##########################################################
 httpDir="/Users/mimran/Projects/"
-rootDir="caga" #leave blank to set http directory as root directory.
+rootDir="stretch-film-8" #leave blank to set http directory as root directory.
 ##########################################################
 
 # Site
 ##########################################################
-siteName="Drupal 7 Push Notify"
-siteSlogan="Push notification Backend"
+siteName="Stretch Film"
+siteSlogan=""
 siteLocale="gb"
 ##########################################################
 
@@ -18,7 +18,7 @@ siteLocale="gb"
 ##########################################################
 dbDriver="mysql"
 dbHost="127.0.0.1"
-dbName="drupal8_caga_db"
+dbName="stretch_film_8_db"
 dbUser="root"
 dbPassword="root"
 ##########################################################
@@ -32,7 +32,7 @@ adminEmail="admin@example.com"
 
 # Download Core
 ##########################################################
-drush dl drupal-8.2.1 -y --destination=$httpDir --drupal-project-rename=$rootDir;
+drush dl drupal-8.3.7 -y --destination=$httpDir --drupal-project-rename=$rootDir;
 
 cd $httpDir/$rootDir;
 
